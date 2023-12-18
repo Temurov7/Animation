@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    background-color: lightblue;
+}
+.cloud{
+    position: relative;
+    z-index: 1;
+    animation: cloud 20s ease infinite;
+}
+.cloud:nth-child(2){
+    position: absolute;
+    z-index: 2;
+    animation: cloud 25s ease infinite;
+    top: 160px;
+    left: 0;
+    opacity: 0.4;
+}
+
+@keyframes cloud{
+    from{
+        transform: translateX(-250px);
+    }
+    to{
+        transform: translateX(2200px);
+    }
+}
+.card{
+    margin-top: 140px;
+    width: 1900px;
+    height: 200px;
+    background: green;
+}
+
+.wrapper{
+    margin-top: 10px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    border: 10px dashed white;
+}
+.card1{
+    width: 1900px;
+    height: 430px;
+    position: relative;
+    background: gray;
+    /* height: 200px; */
+}
+.mario{
+    position: relative;
+    z-index: 1;
+    animation: mario 7s ease infinite;
+}
+@keyframes mario{
+    from{
+        transform: translateX(2200px);
+    }
+    to{
+        transform: translateX(-500px);
+    }
+}
+.bike{
+    position: absolute;
+    z-index: 2;
+    animation: bike 5s ease infinite;
+    top: 190px;
+    left: 0;
+}
+
+@keyframes bike{
+    from{
+        transform: translateX(-250px);
+    }
+    to{
+        transform: translateX(2200px);
+    }
+}
